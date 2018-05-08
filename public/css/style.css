@@ -1,0 +1,330 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menubar {
+    /*background-color: #333;*/
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #f1c02d;
+}
+
+.active {
+    background: #8fcc6d;
+    color: #ffffff !important;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    /*.topnav a:not(:first-child) {display: none;}*/
+    /*.topnav {position: relative;}*/
+    .nav-wrapper ul li:not(:first-child) {
+        display: none;
+    }
+
+    .nav-wrapper a.icon {
+        float: right;
+        display: block !important;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .news-image {
+        padding: 0px;
+        margin-bottom: 15px;
+    }
+    .news-image img {
+        width: 100%!important;
+        height: auto!important;
+        margin-left: 15px;
+    }
+    .news-content {
+        padding: 0px;
+    }
+    .mobile-content {
+        padding-left: 15px!important;
+        padding-right: 15px!important;;
+    }
+
+    .map iframe{
+        width: 100%;
+        height: auto;
+    }
+
+    .videos {
+        width: 100% !important;
+    }
+    .nav-wrapper.responsive {
+        position: relative;
+    }
+
+    .nav-wrapper.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: none;
+    }
+
+    .nav-wrapper.responsive ul {
+        float: left;
+    }
+
+    .nav-wrapper.responsive ul li {
+        float: none !important;
+        display: block;
+        text-align: left;
+    }
+
+    .nav-wrapper ul {
+        padding-left: 0px;
+        border: none !important;
+    }
+
+    #primary-menu li a {
+        border: none !important;
+    }
+
+    .sub-menu {
+        display: none !important;
+    }
+
+    .logotop {
+        text-align: center;
+    }
+
+    .img-responsive {
+        margin: 0 auto
+    }
+
+    .item-product {
+        margin: 0px;
+    }
+
+    .img-custom {
+        height: auto !important;
+    }
+
+    .blog1 {
+        text-align: center;
+        width: 100% !important;
+        padding: 0px !important;
+    }
+
+    .footer-text-mobile {
+        text-align: left;
+    }
+
+    .footer-img {
+        display: none;
+    }
+}
+
+.logotop {
+    padding: 0px;
+    background-image: url(http://www.dap-vinachem.com.vn/css/images/backtop.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: auto 100%;
+    background-color: #f5f5f5;
+}
+
+.news_home_title {
+    padding: 7px 7px 7px 20px;
+    background: url(http://dabaco.vn/images/liststyle.jpg) no-repeat 3px 12px;
+}
+
+/*.bx-wrapper, .bx-viewport, .bx-wrapper img {height: 330px !important;}*/
+/*.bx-wrapper, .bx-viewport {*/
+/*height: 330px !important;*/
+/*}*/
+
+.bx-wrapper {
+    margin-bottom: 15px !important;
+}
+
+.more-news {
+    color: #727272;
+    padding-left: 0;
+    list-style: none;
+}
+
+.more-news li {
+    padding: 15px 0;
+    font-size: 18px;
+    line-height: 1;
+    border-bottom: 1px dashed #b0b0b0;
+}
+
+.more-news li a::before {
+    content: '●';
+    font-size: 18px;
+    margin-right: 8px;
+    color: #727272;
+}
+
+.more-news li a {
+    font-size: 14px;
+    padding-bottom: 10px;
+
+}
+
+.first-news {
+    padding: 15px 0 20px 0;
+    border-bottom: 1px dashed #b0b0b0;
+}
+
+.first-news img {
+    float: left;
+    width: 35%;
+    border-radius: 0;
+    margin-right: 10px;
+    height: 85px;
+}
+
+.first-news h3 {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+.time-posted {
+    color: #b0b0b0;
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+}
+
+.first-news::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.view-more a {
+    font-style: italic;
+    color: #1c9343;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.view-more a::after {
+    content: '>>';
+    padding-left: 5px;
+}
+
+.view-more {
+    text-align: right;
+}
+
+.scrollToTop {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    color: #444;
+    position: fixed;
+    top: 82%;
+    right: 5px;
+    display: none;
+    background: url('/image/backtop.png') no-repeat;
+}
+
+#aboutus1 h2::after {
+    width: 64px;
+    height: 1px;
+    border-top: 1px solid #1c9343;
+    content: '';
+    display: block;
+    margin: 15px 0;
+}
+
+#aboutus1 h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.item-news-custom iframe {
+    width: 100%;
+}
+
+.sub-menu {
+    list-style: none;
+    position: absolute;
+    display: none;
+    /* width: 112px; */
+    z-index: 99999;
+    background-color: #f6f6f6;
+}
+
+#primary-menu {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    border: 1px solid #d9d8d8;
+}
+
+#primary-menu li {
+    float: left;
+    /*width: 150px;*/
+}
+
+#primary-menu li a {
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 0 17.5px;
+    color: #333333;
+    position: relative;
+    border-right: 1px solid #d9d8d8;
+    line-height: 55px;
+    font-weight: bold;
+}
+
+.sub-menu {
+    list-style: none;
+    position: absolute;
+    display: none;
+    /*width:112px;*/
+    z-index: 99999;
+    background-color: #f6f6f6;
+
+}
+
+.menu-custom li:hover .sub-menu {
+    display: block;
+}
+
+.vmag-breadcrumbs {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
