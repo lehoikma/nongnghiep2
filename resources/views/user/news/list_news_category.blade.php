@@ -41,7 +41,7 @@
                     <span class="time-posted">Ngày: 2018-05-05</span>
                     <p>Nghe xong tâm sự này của cô bạn có tên Nguyễn Thị Nô En, dân tình cảm thấy cuộc sống đôi lúc giống như một trò đùa, ...</p>
                 </div>
-            </div> 
+            </div>  
             <div class="col-xs-12 item-news" style="margin-bottom: 20px">
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 row news-image">
                     <img src="http://kenh14cdn.com/thumb_w/300/2018/5/6/photo1525603787523-1525603787523647087986.jpg" style="width: 240px; height: 150px">
