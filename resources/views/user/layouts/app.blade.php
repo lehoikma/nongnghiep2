@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
-<script src="/bower_components/jquery/dist/jquery.min.js"></script>
-<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <html>
 <head>
     <meta charset="utf-8">
@@ -10,11 +10,11 @@
     </title>
     <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon"/>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <link rel="stylesheet" href="/bxslider/src/css/jquery.bxslider.css">
+    <link rel="stylesheet" href="bxslider/src/css/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="/bxslider/src/js/jquery.bxslider.js"></script>
+    <script src="bxslider/src/js/jquery.bxslider.js"></script>
     <script>
       $(function(){
         $('.slider').bxSlider({

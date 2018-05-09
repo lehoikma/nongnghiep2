@@ -6,7 +6,7 @@
     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" style="padding: 0px">
         <div class="slider">
             <div>
-                <img src="/image/slider.jpg">
+                <img src="image/slider.jpg">
                 <div class="bx-caption">
                     <a id="img1a" href="google.com">
                         <span>Funky roots</span>
@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div>
-                <img src="/image/slider2.jpg">
+                <img src="image/slider2.jpg">
                 <div class="bx-caption">
                     <a id="img1a" href="google.com">
                         <span>Funky roots</span>

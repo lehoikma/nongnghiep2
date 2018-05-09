@@ -10,6 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/test', function(){
+    Artisan::call('migrate');
+    Artisan::call('db:seed');
+});
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
     // LOGIN
