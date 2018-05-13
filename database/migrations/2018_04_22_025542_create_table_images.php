@@ -17,6 +17,7 @@ class CreateTableImages extends Migration
             $table->increments('id');
             $table->integer('category_image_id')->nullable();
             $table->string('image');
+            $table->text('description');
             $table->softDeletes();
             $table->timestamps();
         });

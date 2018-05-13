@@ -25,11 +25,19 @@ class NewsController extends Controller
 
     public function listNewsCategory($slg, $id)
     {
-        $news = News::where('category_news_id', $id)->get();
+        $news = News::where('category_news_id', $id)->paginate(15);
         $cateName = CategoriesNews::find($id);
         return view('user.news.list_news_category', [
             'news' => $news,
             'cateName' => $cateName
+        ]);
+    }
+
+    public function detailNews($id)
+    {
+        $news = News::find($id);
+        return view('user.news.detail_news', [
+            'news' => $news
         ]);
     }
 }

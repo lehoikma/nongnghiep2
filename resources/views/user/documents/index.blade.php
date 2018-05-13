@@ -10,6 +10,9 @@
         </span> >
             <span class="current">Văn Bản</span>
         </div>
+        <h2 class="page-title" style="font-weight: 400; color: #38A63A;border-bottom: 1px solid #eee;padding-bottom: 10px;">
+            Văn Bản
+        </h2>
         <table class="table table-bordered">
             <thead style="background: #8ecd6c;">
             <tr>

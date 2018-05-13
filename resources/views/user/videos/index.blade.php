@@ -10,6 +10,10 @@ Videos
         </span> >
             <span class="current">Videos</span>
         </div>
+        <h2 class="page-title"
+            style="font-weight: 400; color: #38A63A;border-bottom: 1px solid #eee;padding-bottom: 10px;">
+            Videos
+        </h2>
         <div class="videos" style="width: 80%">
             @foreach($videos as $value)
                 <strong>{{$value['name']}}</strong>

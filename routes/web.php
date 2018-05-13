@@ -73,8 +73,21 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'auth
     Route::get('/tao-van-ban', 'DocumentsController@formDocuments')->name('form_documents');
     Route::post('/tao-van-ban', 'DocumentsController@saveDocuments')->name('save_documents');
     Route::get('/danh-sach-van-ban', 'DocumentsController@listDocuments')->name('list_documents');
-    Route::get('/xoa-van-bankey/{id}', 'DocumentsController@deleteDocuments')->name('delete_documents');
+    Route::get('/xoa-van-ban/{id}', 'DocumentsController@deleteDocuments')->name('delete_documents');
 
+    //Images
+    Route::get('/tao-danh-muc-hinh-anh', 'ImagesController@createCategoryImage')->name('create_category_image');
+    Route::post('/save-danh-muc-hinh-anh', 'ImagesController@saveCategoryImage')->name('save_category_image');
+    Route::get('/xoa-danh-muc-hinh-anh/{id}', 'ImagesController@deleteCategoryImage')->name('delete_category_image');
+    Route::get('/sua-danh-muc-hinh-anh/{id}', 'ImagesController@showEditCategoryImage')->name('show_edit_category_image');
+    Route::post('/sua-danh-muc-hinh-anh', 'ImagesController@editCategoryImage')->name('edit_category_image');
+
+    Route::get('/tao-hinh-anh', 'ImagesController@registerImage')->name('register_image');
+    Route::post('/luu-hinh-anh', 'ImagesController@saveImage')->name('save_register_image');
+    Route::get('/danh-sach-hinh-anh', 'ImagesController@listImage')->name('list_images');
+    Route::get('/sua-hinh-anh/{id}', 'ImagesController@showEditImage')->name('show_edit_image');
+    Route::post('/sua-hinh-anh', 'ImagesController@editImage')->name('edit_image');
+    Route::get('/xoa-hinh-anh/{id}', 'ImagesController@deleteImage')->name('delete_image');
 });
 
 Route::group(['namespace' => 'User'], function () {
@@ -89,7 +102,9 @@ Route::group(['namespace' => 'User'], function () {
     Route::get('gioi-thieu/dang-doan-the', 'IntroducesController@introduce4')->name('introduce4');
 
     Route::get('tin-tuc', 'NewsController@index')->name('news');
-    Route::get('tin-tuc/{category}/{id}', 'NewsController@listNewsCategory')->name('list_news');
+    Route::get('tin-tuc/{category}/{id}', 'NewsController@listNewsCategory')->name('list_news_user');
+    Route::get('tin-tuc/{id}', 'NewsController@detailNews')->name('detail_news');
+
 
     Route::get('san-pham', 'ProductsController@index')->name('products');
 

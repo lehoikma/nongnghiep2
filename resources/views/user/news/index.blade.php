@@ -18,7 +18,7 @@
                 @foreach($newsCtgs as $value)
                     <li style="margin-bottom: 10px;background: #f6f6f6;padding: 10px;border-radius: 8px;">
                         <h4>
-                            <a href="{{route('list_news',[
+                            <a href="{{route('list_news_user',[
                             'category' => str_slug($value['name']),
                             'id' => $value['id']
                             ])}}">{{$value['name']}}</a>

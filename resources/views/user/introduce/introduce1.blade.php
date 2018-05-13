@@ -10,6 +10,9 @@
         </span> >
             <span class="current">Lịch Sử Hình Thành</span>
         </div>
+        <h2 class="page-title" style="font-weight: 400; color: #38A63A;border-bottom: 1px solid #eee;padding-bottom: 10px;">
+            Lịch Sử Hình Thành
+        </h2>
         <div class="introduces">
             {{$introduce['content']}}
         </div>

@@ -328,3 +328,11 @@ body {
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #8fcc6d;
+    border-color: #8fcc6d;
+}

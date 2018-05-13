@@ -10,6 +10,10 @@ Liên Hệ
         </span> >
             <span class="current">Liên Hệ</span>
         </div>
+        <h2 class="page-title"
+            style="font-weight: 400; color: #38A63A;border-bottom: 1px solid #eee;padding-bottom: 10px;">
+            Liên Hệ
+        </h2>
         <h3>Bản đồ :</h3>
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0053722781136!2d105.78364601429789!3d21.032471043028952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab4ca1ce8cd9%3A0x8f23470d428d5e90!2zUGjhu5EgRHV5IFTDom4sIEThu4tjaCBW4buNbmcgSOG6rXUsIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1525603734838" width="800" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
