@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <html>
 <head>
     <meta charset="utf-8">
@@ -10,11 +10,11 @@
     </title>
     <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon"/>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 
-    <link rel="stylesheet" href="bxslider/src/css/jquery.bxslider.css">
+    <link rel="stylesheet" href="/bxslider/src/css/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="bxslider/src/js/jquery.bxslider.js"></script>
+    <script src="/bxslider/src/js/jquery.bxslider.js"></script>
     <script>
       $(function(){
         $('.slider').bxSlider({
@@ -61,87 +61,87 @@
                 <div class="container" style="background: #8fcc6d">
                     <div class="row">
                         <div id="nav-wrapper" class="nav-wrapper" style="position: relative;float: left;width: 100%;background: #f6f6f6;border: 1px solid #d9d8d8;">
-                                <ul id="primary-menu" class="menu menu-custom" style="list-style: none; position: relative;">
-                                    <li>
-                                        <a class="menu-active" href="{{route('user_top')}}">Trang chủ</a>
-                                    </li>
-                                    <li>
-                                        <a class="menu-active" href="{{route('introduce')}}">Giới Thiệu</a>
-                                        <ul class="sub-menu" style="padding: 0px">
+                            <ul id="primary-menu" class="menu menu-custom" style="list-style: none; position: relative;">
+                                <li>
+                                    <a class="menu-active" href="{{route('user_top')}}">Trang chủ</a>
+                                </li>
+                                <li>
+                                    <a class="menu-active" href="{{route('introduce')}}">Giới Thiệu</a>
+                                    <ul class="sub-menu" style="padding: 0px">
+                                        <li>
+                                            <a href="{{route('introduce1')}}" style="border: none">
+                                                Lịch Sử Hình Thành
+                                            </a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                            <a href="{{route('introduce2')}}" style="border: none">
+                                                Cơ Cấu Tổ Chức
+                                            </a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                            <a href="{{route('introduce3')}}" style="border: none">
+                                                Đơn Vị Thành Viên
+                                            </a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                            <a href="{{route('introduce4')}}" style="border: none">
+                                                Đảng, Đoàn Thể
+                                            </a>
+                                        </li>
+                                        <br>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="menu-active" href="{{route('news')}}">Tin Tức</a>
+                                    <ul class="sub-menu" style="padding: 0px">
+                                        <?php
+                                        $cateNews = \App\Models\CategoriesNews::all();
+                                        ?>
+                                        @foreach($cateNews as $catNews)
                                             <li>
-                                                <a href="{{route('introduce1')}}" style="border: none">
-                                                    Lịch Sử Hình Thành
+                                                <a href="#" style="border: none">
+                                                    {{$catNews['name']}}
                                                 </a>
                                             </li>
                                             <br>
+                                        @endforeach
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="menu-active" href="{{route('products')}}">Sản Phẩm</a>
+                                    <ul class="sub-menu" style="padding: 0px">
+                                        <?php
+                                        $catePrds = \App\Models\CategoriesProducts::all();
+                                        ?>
+                                        @foreach($catePrds as $catprd)
                                             <li>
-                                                <a href="{{route('introduce2')}}" style="border: none">
-                                                    Cơ Cấu Tổ Chức
+                                                <a href="#" style="border: none">
+                                                    {{$catprd['name']}}
                                                 </a>
                                             </li>
                                             <br>
-                                            <li>
-                                                <a href="{{route('introduce3')}}" style="border: none">
-                                                    Đơn Vị Thành Viên
-                                                </a>
-                                            </li>
-                                            <br>
-                                            <li>
-                                                <a href="{{route('introduce4')}}" style="border: none">
-                                                    Đảng, Đoàn Thể
-                                                </a>
-                                            </li>
-                                            <br>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a class="menu-active" href="{{route('news')}}">Tin Tức</a>
-                                        <ul class="sub-menu" style="padding: 0px">
-                                            <?php
-                                                $cateNews = \App\Models\CategoriesNews::all();
-                                            ?>
-                                            @foreach($cateNews as $catNews)
-                                                <li>
-                                                    <a href="#" style="border: none">
-                                                        {{$catNews['name']}}
-                                                    </a>
-                                                </li>
-                                                <br>
-                                            @endforeach
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a class="menu-active" href="{{route('products')}}">Sản Phẩm</a>
-                                        <ul class="sub-menu" style="padding: 0px">
-                                            <?php
-                                            $catePrds = \App\Models\CategoriesProducts::all();
-                                            ?>
-                                            @foreach($catePrds as $catprd)
-                                                <li>
-                                                    <a href="#" style="border: none">
-                                                        {{$catprd['name']}}
-                                                    </a>
-                                                </li>
-                                                <br>
-                                            @endforeach
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a class="menu-active" href="#">Khách Sạn</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{route('document')}}" class="menu-active" >Văn Bản</a>
-                                    </li>
-                                    <li>
-                                        <a class="menu-active" href="{{route('videos')}}">Videos</a>
-                                    </li>
-                                    <li>
-                                        <a class="menu-active" href="#">Hình Ảnh</a>
-                                    </li>
-                                    <li>
-                                        <a class="menu-active" href="{{route('contact')}}">Liên Hệ </a>
-                                    </li>
-                                </ul>
+                                        @endforeach
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="menu-active" href="#">Khách Sạn</a>
+                                </li>
+                                <li>
+                                    <a href="{{route('document')}}" class="menu-active" >Văn Bản</a>
+                                </li>
+                                <li>
+                                    <a class="menu-active" href="{{route('videos')}}">Videos</a>
+                                </li>
+                                <li>
+                                    <a class="menu-active" href="#">Hình Ảnh</a>
+                                </li>
+                                <li>
+                                    <a class="menu-active" href="{{route('contact')}}">Liên Hệ </a>
+                                </li>
+                            </ul>
                             <a href="javascript:void(0);" style="    color: #8fcc6d;
     text-align: center;
     padding: 14px 16px;
@@ -163,13 +163,13 @@
                     <div class="tin-tuc-noi-bat" style=" padding: 8px 16px; padding-left: 0px; padding-top: 0px">
                         <button type="button" class="btn btn-success" style=" background: #8fcc6d; color: #fff;text-transform: uppercase; font-weight: 500; display: block;border-color: snow; border-radius: 0px;">Tin Nổi Bật</button>
                         <?php
-                            $newsFavorite = \App\Models\News::where('status', 1)->limit(5)
-                                ->orderBy('updated_at', 'desc')->get();
+                        $newsFavorite = \App\Models\News::where('status', 1)->limit(5)
+                            ->orderBy('updated_at', 'desc')->get();
                         ?>
                         @foreach($newsFavorite as $newF)
-                        <div class="news_home_title">
-                            <a href="#">{{$newF['title']}}</a>
-                        </div>
+                            <div class="news_home_title">
+                                <a href="#">{{$newF['title']}}</a>
+                            </div>
                         @endforeach
                     </div>
                     <div class="tin-tuc-noi-bat" style=" padding: 8px 16px; padding-left: 0px; padding-top: 0px">

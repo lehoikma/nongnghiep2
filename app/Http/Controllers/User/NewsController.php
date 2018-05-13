@@ -26,8 +26,10 @@ class NewsController extends Controller
     public function listNewsCategory($slg, $id)
     {
         $news = News::where('category_news_id', $id)->get();
+        $cateName = CategoriesNews::find($id);
         return view('user.news.list_news_category', [
-            'news' => $news
+            'news' => $news,
+            'cateName' => $cateName
         ]);
     }
 }
