@@ -4,6 +4,7 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use App\Models\CategoriesNews;
+use App\Models\Hotel;
 use App\Models\Products;
 
 class TopController extends Controller
@@ -20,9 +21,11 @@ class TopController extends Controller
                 ->orderBy('updated_at','desc')
                 ->where('favorite', 1)->get();
         $categoryNews = CategoriesNews::all();
+        $hotel = Hotel::first();
         return view('user.top.index', [
             'product' => $product,
             'slide' => $slide,
+            'hotel' => $hotel,
             'categoryNews' => $categoryNews
         ]);
     }

@@ -130,7 +130,7 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a class="menu-active" href="#">Khách Sạn</a>
+                                    <a class="menu-active" href="{{route('hotel')}}">Khách Sạn</a>
                                 </li>
                                 <li>
                                     <a href="{{route('document')}}" class="menu-active" >Văn Bản</a>

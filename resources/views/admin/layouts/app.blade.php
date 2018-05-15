@@ -115,7 +115,7 @@
                         </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href=""><i class="fa fa-circle-o"></i> Tạo Bài Viết</a></li>
+                        <li><a href="{{route('register_hotel')}}"><i class="fa fa-circle-o"></i> Tạo Bài Viết</a></li>
                     </ul>
                 </li>
 

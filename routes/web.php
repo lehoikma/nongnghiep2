@@ -88,6 +88,10 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'auth
     Route::get('/sua-hinh-anh/{id}', 'ImagesController@showEditImage')->name('show_edit_image');
     Route::post('/sua-hinh-anh', 'ImagesController@editImage')->name('edit_image');
     Route::get('/xoa-hinh-anh/{id}', 'ImagesController@deleteImage')->name('delete_image');
+
+    //Hotel
+    Route::get('/tao-khach-san', 'HotelController@registerHotel')->name('register_hotel');
+    Route::post('/luu-khach-san', 'HotelController@saveHotel')->name('save_hotel');
 });
 
 Route::group(['namespace' => 'User'], function () {
@@ -105,7 +109,9 @@ Route::group(['namespace' => 'User'], function () {
     Route::get('tin-tuc/{category}/{id}', 'NewsController@listNewsCategory')->name('list_news_user');
     Route::get('tin-tuc/{id}', 'NewsController@detailNews')->name('detail_news');
 
+
     Route::get('/hinh-anh', 'ImageController@listImage')->name('list_image');
+    Route::get('khach-san', 'HotelController@index')->name('hotel');
 
     Route::get('san-pham', 'ProductsController@index')->name('products');
 
