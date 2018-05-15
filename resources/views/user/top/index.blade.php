@@ -103,20 +103,16 @@
         <div class="row">
             <div id="aboutus1" class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
                 <h2 style="margin-top:0;font-size:22px;">Về chúng tôi</h2>
-                <h3>Khách Sạn Hà Anh</h3>
+                <h3>{{$hotel['name']}}</h3>
                 <div class="description">
-                    <p>Công ty Cổ phần DAP – VINACHEM là doanh nghiệp cổ phần với 64% vốn Nhà nước trực thuộc Tập đoàn Công nghiệp Hóa chất Việt Nam. Giấy chứng nhận đăng ký kinh doanh số 0200827051, do Sở kế hoạch &amp; Đầu tư Hải Phòng cấp&nbsp; ngày 29/7/2008 và đăng ký thay đổi lần thứ 4, ngày 26/12/2014.</p>
-
-                    <p>Vốn điều lệ: 1.461 tỷ đồng.</p>
-
-                    <p>- Ngành nghề kinh doanh chính:</p>
+                    <p>{!! $hotel['description'] !!}</p>
                 </div>
                 <div style="padding-top: 20px; text-align: center; padding-bottom: 20px">
                     <a href="" style="    background-color: #f1c02d;color: #000;border-radius: 5px;text-transform: uppercase;padding: 8px 20px;text-shadow: none;">Xem thêm</a>
                 </div>
             </div>
             <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 text-right">
-                <img style="height: 350px;width: 100%;" src="http://images.sakihotel.com/content_img/2015/1028/05_phong_03_1_IMG_6909_resize.JPG" alt="Công ty cổ phần DAP - Vinachem" class="img-responsive img-thumbnail img-custom">
+                <img style="height: 350px;width: 100%;" src="/upload/{{$hotel['image']}}" class="img-responsive img-thumbnail img-custom">
             </div>
         </div>
     </div>
