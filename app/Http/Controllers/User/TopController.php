@@ -16,9 +16,13 @@ class TopController extends Controller
     public function index()
     {
         $product = Products::limit(6)->orderBy('updated_at','desc')->get();
+        $slide = Products::limit(5)
+                ->orderBy('updated_at','desc')
+                ->where('favorite', 1)->get();
         $categoryNews = CategoriesNews::all();
         return view('user.top.index', [
             'product' => $product,
+            'slide' => $slide,
             'categoryNews' => $categoryNews
         ]);
     }

@@ -105,6 +105,7 @@ Route::group(['namespace' => 'User'], function () {
     Route::get('tin-tuc/{category}/{id}', 'NewsController@listNewsCategory')->name('list_news_user');
     Route::get('tin-tuc/{id}', 'NewsController@detailNews')->name('detail_news');
 
+    Route::get('/hinh-anh', 'ImageController@listImage')->name('list_image');
 
     Route::get('san-pham', 'ProductsController@index')->name('products');
 
