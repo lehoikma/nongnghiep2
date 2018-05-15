@@ -5,22 +5,16 @@
 @section('content')
     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" style="padding: 0px">
         <div class="slider">
+            @foreach($slide as $value)
             <div>
-                <img src="image/slider.jpg">
+                <img src="upload/{{$value['image_slide']}}">
                 <div class="bx-caption">
                     <a id="img1a" href="google.com">
-                        <span>Funky roots</span>
+                        <span>{{$value['title']}}</span>
                     </a>
                 </div>
             </div>
-            <div>
-                <img src="image/slider2.jpg">
-                <div class="bx-caption">
-                    <a id="img1a" href="google.com">
-                        <span>Funky roots</span>
-                    </a>
-                </div>
-            </div>
+            @endforeach
         </div>
 
         <div class="col-md-12 san-pham">

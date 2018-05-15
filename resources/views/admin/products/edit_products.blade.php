@@ -1,6 +1,6 @@
 @extends('admin.layouts.app')
 @section('title-content')
-    Sửa Tin Tức
+    Sửa Sản Phẩm
 @endsection
 @section('content')
     <div class="col-md-12">
@@ -8,7 +8,7 @@
             {{csrf_field()}}
             <input type="hidden" name="products_id" value="{{$products['id']}}">
             <div class="col-md-8">
-                <label>Tên Tin Tức <span style="color: red">(*)</span></label>
+                <label>Tên Sản Phẩm<span style="color: red">(*)</span></label>
                 <div class="form-group">
                     <input type="text" name="title_products" class="form-control" placeholder="Nhập tên sản phẩm ..." value="{{$products['title']}}">
                 </div>
@@ -18,7 +18,7 @@
             </div>
 
             <div class="col-md-8">
-                <label>Danh Mục Tin Tức :</label>
+                <label>Danh Mục Sản Phẩm :</label>
                 <select class="form-control" id="sel1" name="select_cate_prd">
                     <option value=""></option>
                     @foreach($categories as $value)
@@ -37,7 +37,7 @@
             </div>
 
             <div class="col-md-12" style="margin-top: 15px">
-                <label>Mô tả về tin tức <span style="color: red">(*)</span></label>
+                <label>Mô tả về sản phẩm <span style="color: red">(*)</span></label>
                 <textarea id="editor1" name="content_products" rows="7" class="form-control ckeditor">{{$products['content']}}</textarea>
                 <script src="/ckeditor/ckeditor.js"></script>
 
@@ -71,7 +71,7 @@
             </div>
 
             <div class=" col-md-8" style="margin-top: 20px">
-                <button type="submit" class="btn btn-primary"> Sửa Tin Tức</button>
+                <button type="submit" class="btn btn-primary"> Sửa Sản Phẩm</button>
             </div>
         </form>
     </div>

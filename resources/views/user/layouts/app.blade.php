@@ -102,7 +102,10 @@
                                         ?>
                                         @foreach($cateNews as $catNews)
                                             <li>
-                                                <a href="#" style="border: none">
+                                                <a href="{{route('list_news_user',[
+                            'category' => str_slug($catNews['name']),
+                            'id' => $catNews['id']
+                            ])}}" style="border: none">
                                                     {{$catNews['name']}}
                                                 </a>
                                             </li>
@@ -136,7 +139,7 @@
                                     <a class="menu-active" href="{{route('videos')}}">Videos</a>
                                 </li>
                                 <li>
-                                    <a class="menu-active" href="#">Hình Ảnh</a>
+                                    <a class="menu-active" href="{{route('list_image')}}">Hình Ảnh</a>
                                 </li>
                                 <li>
                                     <a class="menu-active" href="{{route('contact')}}">Liên Hệ </a>
