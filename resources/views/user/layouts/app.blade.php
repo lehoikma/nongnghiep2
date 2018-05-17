@@ -121,7 +121,10 @@
                                         ?>
                                         @foreach($catePrds as $catprd)
                                             <li>
-                                                <a href="#" style="border: none">
+                                                <a href="{{route('list_product_user', [
+                            'category' => str_slug($catprd['name']),
+                            'id' => $catprd['id']
+                            ])}}" style="border: none">
                                                     {{$catprd['name']}}
                                                 </a>
                                             </li>
@@ -217,7 +220,7 @@
     <div class="clearfix"></div>
     <a href="#" class="scrollToTop"></a>
     <div class="footer" style="background: #8fcc6d; width: 100%; float: left; margin-top: 30px;">
-        <div class="container" style="margin-left:0px; padding-top: 5px; padding-bottom: 0px;">
+        <div class="container" style="padding-top: 5px; padding-bottom: 0px;">
             <div class="blog1" style="width: 85%; float: left; padding: 20px;">
                 <img class="footer-img" width="250" height="120" src="http://www.dap-vinachem.com.vn/images/contact/4926logo.png">
                 <p class="footer-text-mobile" style="color: #fff; padding-top: 0px; padding-right: 20px; float: right;">Đơn vị chủ quản: Tập Đoàn Thành Đô<br>

@@ -9,7 +9,7 @@
             <div>
                 <img src="upload/{{$value['image_slide']}}">
                 <div class="bx-caption">
-                    <a id="img1a" href="google.com">
+                    <a id="img1a" href="{{route('detail_product', $value['id'])}}">
                         <span>{{$value['title']}}</span>
                     </a>
                 </div>
@@ -30,7 +30,7 @@
         border-radius: 5px;
         height: 160px;">
                             <a href="#">
-                                <img src="upload/{{$prd['image']}}" class="img-responsive">
+                                <img src="upload/{{$prd['image']}}" class="img-responsive" style="width: 100%; height: 100%">
                             </a>
                         </div>
 
