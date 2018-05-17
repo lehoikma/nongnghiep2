@@ -109,10 +109,10 @@ Route::group(['namespace' => 'User'], function () {
     Route::get('tin-tuc/{category}/{id}', 'NewsController@listNewsCategory')->name('list_news_user');
     Route::get('tin-tuc/{id}', 'NewsController@detailNews')->name('detail_news');
 
-
     Route::get('/hinh-anh', 'ImageController@listImage')->name('list_image');
     Route::get('khach-san', 'HotelController@index')->name('hotel');
 
     Route::get('san-pham', 'ProductsController@index')->name('products');
-
+    Route::get('san-pham/{category}/{id}', 'ProductsController@listProductsCategory')->name('list_product_user');
+    Route::get('san-pham/{id}', 'ProductsController@detailProducts')->name('detail_product');
 });

@@ -52,6 +52,13 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+    .special {
+        height: 250px !important;
+    }
+    .item_content figure {
+        height: 200px !important;
+    }
+
     .news-image {
         padding: 0px;
         margin-bottom: 15px;
